@@ -50,5 +50,7 @@ Thumbs.db
 
 
 #Terraform State file 
-*.terraform
+*.terraform*
 *.tfstate.*
+.terraform.lock.hcl
+terrafirm.tfstate
