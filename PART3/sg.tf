@@ -18,7 +18,7 @@ resource "aws_security_group" "apache_sg" {
         from_port   = 22
         to_port     = 22
         protocol    = "tcp"
-        cidr_blocks = ["24.14.245.186/32"] ## The IP range for the users local IP addresses
+        cidr_blocks = ["0.0.0.0/0"] ## The IP range for the users local IP addresses
     }
 
     egress {
