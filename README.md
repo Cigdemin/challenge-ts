@@ -20,7 +20,7 @@ In Part 3 following tasks completed:
 
 **Terraform Code:** Create an EC2 server and install Apache web server.
 **Deployment Automation:** Automate the deployment process using a Jenkins pipeline.
-## Configuration/Infrastructure Management Code
+### **Configuration/Infrastructure Management Code**
 **Terraform:** Used for infrastructure provisioning and management.
 **Jenkins:** Used for automating the deployment process.
 
