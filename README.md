@@ -11,7 +11,22 @@ In Part 1 following tasks completed:
 **Overview**
 In Part 2 following tasks completed:
 1. Docker Security Best Practices: Documented at Part2_documentation.docx file under the PART2 repository. Docker filer added PART2 repository. 
-2. Kubernetes Security Configuration: Documented at Part2_documentation.docx file under the PART2 repository. I have not included a Kubernetes file as I do not have extensive experience working with Kubernetes.
+2. Kubernetes Security Configuration: Documented at Part2_documentation.docx file under the PART2 repository. 
+Although I have included a Kubernetes file I researched on it to aim all tasks are completed and below I have provided an explanation of the file's content,which I shared on yaml file.
+
+**Container-level security context:**
+
+runAsUser and runAsGroup: Runs the container as a non-root user with a specific UID and GID.
+allowPrivilegeEscalation: false: Prevents the process from gaining more privileges than its parent process.
+capabilities: Drops all Linux capabilities by default and selectively adds only necessary ones (in this case, NET_BIND_SERVICE as an example).
+readOnlyRootFilesystem: true: Makes the root filesystem read-only, preventing modifications to the container's filesystem at runtime.
+
+
+**Pod-level security context:**
+hostPID: false: Prevents the pod from seeing processes on the host system.
+hostNetwork: false: Prevents the pod from using the host's network namespace.
+hostIPC: false: Prevents the pod from using the host's IPC namespace.
+
 3. IaaS Security Measures: Documented at Part2_documentation.docx file under the PART2 repository
 
 ## **PART3: CI/CD Pipeline Setup**
